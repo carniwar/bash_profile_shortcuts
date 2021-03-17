@@ -54,3 +54,13 @@ source /usr/share/bash-completion/bash_completion
 # K8
 alias k=kubectl
 source /home/castanon/.kube/kubectl-bash-completion
+
+# GPG
+alias gpg-generate="gpg --full-generate-key"
+alias gpg-export="gpg --output ~/felipe.key --armor --export"
+alias gpg-import="gpg --import"
+alias gpg-encrypt="gpg --output encrypted.asc --encrypt"
+alias gpg-decrypt="gpg --output decrypted.asc --decrypt"
+
+# https://github.com/blendle/kns
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
